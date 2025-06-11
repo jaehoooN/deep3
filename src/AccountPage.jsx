@@ -17,13 +17,12 @@ export default function AccountPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4">
       <h1 className="text-2xl font-semibold mb-8">{account.name}</h1>
-      <div className="grid grid-cols-2 gap-6 w-full max-w-sm">
+      <div className="grid grid-cols-2 gap-6 w-full max-w-md">
         {BUTTONS.map((label, idx) => (
           <a
             key={idx}
             href={account.url}
-            className="bg-black text-white aspect-square flex items-center justify-center rounded-lg hover:opacity-80 transition text-2xl"
-            style={{ transform: "scale(1.6)" }} // 크기 1.6배 확대
+            className="bg-black text-white aspect-square flex items-center justify-center rounded-xl hover:opacity-80 transition text-2xl font-semibold"
           >
             {label}
           </a>
